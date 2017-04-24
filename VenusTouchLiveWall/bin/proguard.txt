@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:17
+-keep class jp.venus.vtlwhtsy01801.Launcher { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class jp.venus.vtlwhtsy01801.Preference { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class jp.venus.vtlwhtsy01801.VenusTouchLiveWall { <init>(...); }
+
