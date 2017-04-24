@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="launcher_text">隠された部分をタップまたはダブルタップすることで画像が楽しめるアプリです</string>
+ 
+    <string name="app_name">疋田紗也 タッチ壁紙</string>
+    <string name="description">壁紙上のある場所（全部で5箇所）にタップまたはダブルタップをすると画像が切り替わります。</string>
+    
+    <string name="wallpaper_settings">『疋田紗也 タッチ壁紙』</string>
+    
+    <string name="list_title">list項目のタイトルここ</string>
+    <string name="list_summary">list項目の説明ここ</string>
+
+	<string name="checkbox_title">checkboxタイトルここ</string>
+	<string name="checkbox_summary">checkbox説明ここ</string>
+
+	<string name="edittext_title">提供元</string>
+	<string name="edittext_summary">セクシービーナス</string>
+     
+</resources>

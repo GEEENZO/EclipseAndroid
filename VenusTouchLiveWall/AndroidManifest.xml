@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.venus.vtlwhtsy01801"
+    android:versionCode="1"
+    android:versionName="1.01" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/thumbnail"
+        android:label="@string/app_name" >
+        
+        <!-- ランチャーアプリ -->
+  		<activity 
+  		   android:name="jp.venus.vtlwhtsy01801.Launcher" android:label="@string/app_name">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+        </activity>
+        
+  		<!-- ライブ壁紙本体 -->
+        <service 
+			android:debuggable="true"
+			android:largeHeap="true"
+			android:theme="@style/AppTheme" 
+			android:name="jp.venus.vtlwhtsy01801.VenusTouchLiveWall"
+			android:label="@string/app_name"
+			android:permission="android.permission.BIND_WALLPAPER">
+				<intent-filter>
+					<action android:name="android.service.wallpaper.WallpaperService" />
+				</intent-filter>
+				<meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper" />
+		</service>
+
+        <!-- 設定画面アプリ
+        <activity 
+            android:name=".Preference"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Light.WallpaperSettings"
+        	android:exported="true">
+       	</activity>
+       	 -->
+
+  		<!-- 設定画面 -->
+        <activity 
+            android:name="jp.venus.vtlwhtsy01801.Preference"
+            android:label="@string/wallpaper_settings" 
+            android:theme="@android:style/Theme.Black"
+        	android:exported="true">
+       	</activity>
+    </application>
+
+</manifest>
